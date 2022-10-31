@@ -204,8 +204,8 @@ const CreateABooking = (props) => {
 
   const specialButtonClass = `text-xl font-medium mt-2 `;
 
-  const primaryBtn = `text-md text-white pt-[6px] px-4 py-1 rounded-lg bg-[#0f172a]`;
-  const secondaryBtn = `text-md border-2 pt-[6px] px-4 py-1 rounded-lg border-[#0f172a]`;
+  const primaryBtn = `text-md text-white  px-4 py-1 rounded-lg bg-[#0f172a]`;
+  const secondaryBtn = `text-md border-2  px-4 py-1 rounded-lg border-[#0f172a]`;
 
   // styles for select
   const colourStyles = {
