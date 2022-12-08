@@ -11,3 +11,11 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Eudoxus";
+    src: url("./fonts/Eudoxus-Sans/EudoxusSansGX.woff2");
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+  }
+}

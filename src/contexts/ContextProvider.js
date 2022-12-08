@@ -3,7 +3,12 @@ import React, { createContext, useContext, useState } from "react";
 const StateContext = createContext();
 
 export const ContextProvider = ({ children }) => {
-  // variables
+  // constants
+  const BASE_URL = "http://127.0.0.1:8000/";
+
+  // user authentication and authorization
+  const [user, setUser] = useState(null);
+
   const initialState = {
     chat: false,
     cart: false,
@@ -34,7 +39,11 @@ export const ContextProvider = ({ children }) => {
 
   const [specialButtonColor] = useState("#2563EB");
 
-  const [themeColor, setThemeColor] = useState("#080a3c");
+  const [themeColor, setThemeColor] = useState("#0560FD");
+  const [fontPrimaryColor, setFontPrimaryColor] = useState("#101C2D");
+  const [fontSecondaryColor, setFontSecondaryColor] = useState("#66768E");
+  const [outlineColor, setOutlineColor] = useState("#DDE4EE");
+
   const [formData, setFormData] = useState({
     page1: {
       companyName: "a",
@@ -143,6 +152,9 @@ export const ContextProvider = ({ children }) => {
         setMode,
         setColor,
         specialButtonColor,
+        BASE_URL,
+        user,
+        setUser,
       }}
     >
       {children}

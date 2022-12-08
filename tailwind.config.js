@@ -7,8 +7,15 @@ module.exports = {
       body: ["Open Sans", "sans-serif"],
       logo: ["Karla", "sans-serif"],
       inter: ["Inter", "sans-serif"],
+      eudoxus: ["Eudoxus"],
     },
     extend: {
+      colors: {
+        "primary-color": "#0560FD",
+        "fonts-primary-color": "#101C2D",
+        "fonts-secondary-color": "#66768E",
+        "outline-color": "#DDE4EE",
+      },
       fontSize: {
         14: "14px",
       },

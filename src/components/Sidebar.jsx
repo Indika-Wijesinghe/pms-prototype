@@ -9,6 +9,8 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { links } from "../data/dummy.js";
 import { useStateContext } from "../contexts/ContextProvider.js";
 
+import { v4 as uuidv4 } from "uuid";
+
 const Sidebar = () => {
   const { activeMenu, setActiveMenu, screenSize, currentColor } =
     useStateContext();
@@ -19,17 +21,17 @@ const Sidebar = () => {
     }
   };
 
-  const activeLink = `flex item-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg font-light text-white text-md m-2 `;
+  const activeLink = `flex font-eudoxus item-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg font-md text-white text-md m-2 `;
 
   const normalLink =
-    "flex item-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md font-light text-gray-400 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2";
+    "flex item-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  font-md font-eudoxus text-fonts-primary-color dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2";
 
   const iconStyle = { color: "gray" };
   return (
-    <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
+    <div className=" h-screen md:overflow-hidden border-r-2 bg-white pl-3 overflow-auto md:hover:overflow-auto pb-10">
       {activeMenu && (
         <>
-          <div className="flex justify-between items-center border-b-1 pb-5 ">
+          <div className="flex justify-between items-center border-b-2 pb-5 ">
             <Link
               to="/"
               onClick={handleCloseSideBar}
@@ -56,7 +58,7 @@ const Sidebar = () => {
           <div className="mt-5">
             {links.map((item) => {
               return (
-                <div key={item.title}>
+                <div key={uuidv4()}>
                   {/* <p className="text-gray-600 m-3 mt-4 uppercase">
                     {item.title}
                   </p> */}

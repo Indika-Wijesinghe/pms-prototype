@@ -60,7 +60,7 @@ const Navbar = () => {
   }, [screenSize]);
 
   return (
-    <div className="flex bg-main-bg  justify-between p-2 md:mx-6 dark:bg-slate-800">
+    <div className="flex bg-main-bg justify-between p-2 md:mx-6 dark:bg-slate-800">
       <NavButton
         title="Menu"
         customFunc={() => setActiveMenu((preValue) => !preValue)}

@@ -1,5 +1,5 @@
 {
-  "homepage":"http://indika-wijesinghe.github.io/pms-prototype",
+  "homepage": "http://indika-wijesinghe.github.io/pms-prototype",
   "name": "project_syncfusion_dashboard",
   "version": "0.1.0",
   "private": true,
@@ -15,22 +15,25 @@
     "@syncfusion/ej2-react-richtexteditor": "^19.4.50",
     "@syncfusion/ej2-react-schedule": "^19.4.50",
     "craco": "^0.0.3",
+    "date-fns": "^2.29.3",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-select": "^5.5.7",
     "uuid": "^9.0.0"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +55,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
+    "dotenv": "^16.0.3",
     "eslint": "^8.9.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.4",
